@@ -1,14 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
-
-	<Import Project="..\..\configureawait.props" />
-	<Import Project="..\..\common.props" /> <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+  <Import Project="..\..\configureawait.props" />
+  <Import Project="..\..\common.props" />
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-
-   
- 
   <ItemGroup>
     <ProjectReference Include="..\Abp.UI.Bootstrap\Abp.UI.Bootstrap.csproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Update="ConfigureAwait.Fody" Version="3.3.2" />
+    <PackageReference Update="Fody" Version="6.8.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Update="Microsoft.SourceLink.GitHub" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>

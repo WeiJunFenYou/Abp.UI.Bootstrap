@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Volo.Abp.AspNetCore.Authentication.OpenIdConnect;
+using Volo.Abp.AspNetCore.Components.Server.BasicTheme;
 using Volo.Abp.AspNetCore.Mvc.Client;
 using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Autofac;
@@ -37,14 +38,14 @@ namespace Abp.UI.Bootstrap.Server.Demo
         typeof(AbpAspNetCoreMvcClientModule),
         typeof(AbpAspNetCoreAuthenticationOpenIdConnectModule),
         typeof(AbpHttpClientIdentityModelWebModule),
-        typeof(AbpAspNetCoreMvcUiBasicThemeModule),
+        //typeof(AbpAspNetCoreMvcUiBasicThemeModule),
         typeof(AbpAutofacModule),
         typeof(AbpSwashbuckleModule),
         typeof(AbpAspNetCoreSerilogModule),
-        typeof(AbpAspNetCoreComponentsServerBasicThemeModule),
-        typeof(AbpIdentityBlazorServerModule),
-        typeof(AbpTenantManagementBlazorServerModule),
-        typeof(AbpSettingManagementBlazorServerModule)
+        typeof(AbpAspNetCoreComponentsServerBasicThemeModule)//,
+        //typeof(AbpIdentityBlazorServerModule),
+        //typeof(AbpTenantManagementBlazorServerModule),
+        //typeof(AbpSettingManagementBlazorServerModule)
     )]
     public class DemoModule : AbpModule
     {

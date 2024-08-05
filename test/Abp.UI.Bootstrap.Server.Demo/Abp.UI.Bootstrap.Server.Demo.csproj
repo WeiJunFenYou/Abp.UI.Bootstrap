@@ -1,19 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Abp.UI.Bootstrap.Server.BasicTheme\Abp.UI.Bootstrap.Server.BasicTheme.csproj" />
     <ProjectReference Include="..\..\src\Abp.UI.Bootstrap.Server.Theming\Abp.UI.Bootstrap.Server.Theming.csproj" />
   </ItemGroup>
-	<ItemGroup>
-		<PackageReference Include="Volo.Abp.Autofac" Version="4.3.3" />
-		<PackageReference Include="Volo.Abp.Swashbuckle" Version="4.3.3" />
-		<PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="4.3.3" />
-		<PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="4.3.3" />
-		<PackageReference Include="Volo.Abp.AspNetCore.Mvc.Client" Version="4.3.3" />
-		<PackageReference Include="Volo.Abp.AspNetCore.Authentication.OpenIdConnect" Version="4.3.3" />
-		<PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" Version="4.3.3" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Autofac" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.Swashbuckle" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Serilog" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc.Client" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Authentication.OpenIdConnect" Version="8.2.1" />
+    <PackageReference Include="Volo.Abp.Http.Client.IdentityModel.Web" Version="8.2.1" />
+  </ItemGroup>
 </Project>
